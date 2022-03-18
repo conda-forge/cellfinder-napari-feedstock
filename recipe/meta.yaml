@@ -1,5 +1,5 @@
 {% set name = "cellfinder-napari" %}
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cellfinder-napari-{{ version }}.tar.gz
-  sha256: ac249aef5dcf760b81f655fb0a726a749efd8b8548ba7990749b0d9137cf9b7a
+  sha256: e89b8e45e23e1108d8c58a019a641c47451ba632b65b5e45df4dfae32ba52ad2
 
 build:
   noarch: python
@@ -46,4 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/napari
-    - adamltyson 
+    - adamltyson
