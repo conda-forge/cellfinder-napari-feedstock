@@ -119,5 +119,6 @@ Feedstock Maintainers
 =====================
 
 * [@adamltyson](https://github.com/adamltyson/)
-* [@conda-forge/napari](https://github.com/conda-forge/napari/)
+* [@goanpeca](https://github.com/goanpeca/)
+* [@jaimergp](https://github.com/jaimergp/)
 
