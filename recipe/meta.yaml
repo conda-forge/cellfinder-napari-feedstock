@@ -1,5 +1,5 @@
 {% set name = "cellfinder-napari" %}
-{% set version = "0.0.19" %}
+{% set version = "0.0.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cellfinder-napari-{{ version }}.tar.gz
-  sha256: e89b8e45e23e1108d8c58a019a641c47451ba632b65b5e45df4dfae32ba52ad2
+  sha256: c5e3665eb87ffdc5abec99fdc9cbd493752c5f29689b5e9d2b6ea83b65ee1aed
 
 build:
   noarch: python
@@ -20,11 +20,18 @@ requirements:
     - python >=3.7
   run:
     - brainglobe-napari-io
-    - cellfinder-core >=0.2.4
+    - cellfinder-core >=0.3
+    - imlib
+    - magicgui
     - napari
     - napari-ndtiffs
     - napari-plugin-engine >=0.1.4
+    - numpy
+    - pooch >=1
     - python >=3.7
+    - qtpy
+    - scikit-image
+    - tifffile
 
 test:
   imports:
@@ -41,10 +48,10 @@ about:
   summary: Efficient cell detection in large images
   license: BSD-3-Clause
   license_file: LICENSE
-  dev_url: https://github.com/brainglobe/cellfinder
+  dev_url: https://github.com/brainglobe/cellfinder-napari
 
 extra:
   recipe-maintainers:
+    - adamltyson
     - goanpeca
     - jaimergp
-    - adamltyson
