@@ -19,12 +19,31 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - brainreg
     - brainglobe-napari-io
     - cellfinder-core >=0.2.4
+    - cellfinder-napari
+    - configparser
+    - fancylog >=0.0.7
+    - imio
+    - imlib >=0.0.26
     - napari
+    - brainglobe-napari-io
+    - multiprocessing-logging
     - napari-ndtiffs
     - napari-plugin-engine >=0.1.4
+    - natsort
+    - numpy
+    - packaging
+    - pandas
+    - psutil
     - python >=3.7
+    - scikit-image
+    - scikit-learn
+    - slurmio >=0.0.4
+    - tensorflow >=2.5.0
+    - tifffile
+    - tqdm
 
 test:
   imports:
@@ -45,6 +64,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - adamltyson
     - goanpeca
     - jaimergp
-    - adamltyson
