@@ -21,10 +21,17 @@ requirements:
   run:
     - brainglobe-napari-io
     - cellfinder-core >=0.3
+    - imlib
+    - magicgui
     - napari
     - napari-ndtiffs
     - napari-plugin-engine >=0.1.4
+    - numpy
     - pooch >=1
+    - python >=3.7
+    - qtpy
+    - scikit-image
+    - tifffile
 
 test:
   imports:
