@@ -1,15 +1,15 @@
-About cellfinder-napari
-=======================
+About cellfinder-napari-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cellfinder-napari-feedstock/blob/main/LICENSE.txt)
 
 Home: https://brainglobe.info/cellfinder
 
 Package license: BSD-3-Clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cellfinder-napari-feedstock/blob/main/LICENSE.txt)
-
 Summary: Efficient cell detection in large images
 
-Development: https://github.com/brainglobe/cellfinder
+Development: https://github.com/brainglobe/cellfinder-napari
 
 Current build status
 ====================
