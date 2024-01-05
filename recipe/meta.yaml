@@ -1,5 +1,5 @@
 {% set name = "cellfinder-napari" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cellfinder-napari-{{ version }}.tar.gz
-  sha256: e50edb308309a721e2711d6d62f136c48dc37ed5a8b177f0c6778af4576a328d
+  sha256: e87cb277520a35e60edfe692b908a48666f390136777ef9b482fcc6e604595e8
 
 build:
   noarch: python
