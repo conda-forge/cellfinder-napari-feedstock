@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cellfinder-napari-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cellfinder-napari-{{ version }}.tar.gz
   sha256: e87cb277520a35e60edfe692b908a48666f390136777ef9b482fcc6e604595e8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - brainglobe-napari-io
     - cellfinder-core >=0.3
@@ -28,7 +28,7 @@ requirements:
     - napari-plugin-engine >=0.1.4
     - numpy
     - pooch >=1
-    - python >=3.7
+    - python >={{ python_min }}
     - qtpy
     - scikit-image
     - tifffile
@@ -42,6 +42,7 @@ test:
   requires:
     - pip
     - oclgrind
+    - python {{ python_min }}
 
 about:
   home: https://brainglobe.info/cellfinder
